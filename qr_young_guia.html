@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Línea Young · Protocolos · AB Cosmetic</title>
+<style>
+  :root{ --navy:#0B1F3A; --gold:#C9A227; --mint:#2FA98C; --mintsoft:#E4F5EF; --ink:#3a4654; --bg:#e9eef3; }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif;background:var(--bg);display:flex;justify-content:center;}
+  .page{width:100%;max-width:460px;background:var(--navy);min-height:100vh;}
+  .topbar{height:6px;background:var(--mint);}
+  .hero{padding:34px 24px 22px;text-align:center;}
+  .badge{width:72px;height:72px;margin:0 auto 14px;position:relative;}
+  .badge .ring{position:absolute;inset:0;border-radius:50%;border:2px solid var(--mint);}
+  .badge .leaf{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:30px;}
+  .brand{font-family:Georgia,serif;font-size:12px;letter-spacing:4px;color:var(--mint);}
+  .title{font-family:Georgia,serif;font-size:29px;font-weight:bold;color:#fff;margin-top:10px;line-height:1.15;}
+  .subtitle{font-size:14px;color:#c2cdda;margin-top:10px;line-height:1.5;}
+  .ask{background:var(--mint);color:#fff;text-align:center;font-weight:bold;font-size:15px;padding:14px;font-family:Georgia,serif;}
+  .body{background:#fff;border-radius:20px 20px 0 0;margin-top:6px;padding:6px 0 4px;}
+  .legend{display:flex;gap:18px;justify-content:center;padding:12px 20px 12px;font-size:11px;color:#8a97a5;border-bottom:1px solid #f0f2f4;}
+  .legend span{display:flex;align-items:center;gap:5px;}
+  .legdot{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .prof{border-bottom:1px solid #eef0f2;}
+  .phead{list-style:none;cursor:pointer;padding:16px 20px;display:flex;align-items:center;gap:13px;}
+  .phead::-webkit-details-marker{display:none;}
+  .ic{width:42px;height:42px;border-radius:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px;}
+  .ptit{flex:1;} .ptit .big{font-size:15px;font-weight:bold;color:var(--navy);line-height:1.25;}
+  .ptit .small{font-size:11.5px;color:#8a97a5;margin-top:2px;}
+  .pm{color:var(--mint);font-size:20px;transition:transform .2s;}
+  .prof[open] .pm{transform:rotate(45deg);}
+  .pcont{padding:2px 20px 20px;}
+  .donde{background:#f6f8fa;border-left:3px solid var(--mint);border-radius:0 10px 10px 0;padding:12px 14px;font-size:13.5px;line-height:1.55;color:var(--ink);margin-top:6px;}
+  .donde .dl{display:block;font-weight:bold;color:var(--mint);font-size:11px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px;}
+  .rblock{margin-top:16px;}
+  .rblock .rt{font-size:12px;font-weight:bold;letter-spacing:1px;color:var(--mint);text-transform:uppercase;margin-bottom:8px;}
+  .step{display:flex;gap:11px;padding:9px 0;border-bottom:1px dashed #e7eaee;}
+  .step:last-child{border-bottom:none;}
+  .num{width:23px;height:23px;border-radius:50%;background:var(--mint);color:#fff;font-size:12px;font-weight:bold;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .stx{font-size:13.5px;line-height:1.5;color:var(--ink);} .stx b{color:var(--navy);}
+  .tg{display:inline-block;font-size:10px;font-weight:bold;color:#9a7a16;background:#FBF1D6;padding:1px 7px;border-radius:10px;margin-left:4px;vertical-align:middle;letter-spacing:.3px;}
+  .evol{margin-top:18px;background:#0B1F3A;border-radius:12px;padding:14px 16px;}
+  .evol .et{color:var(--mint);font-size:12px;font-weight:bold;letter-spacing:.5px;margin-bottom:10px;}
+  .fase{display:flex;gap:9px;padding:6px 0;}
+  .fdot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:6px;}
+  .ftx{font-size:13px;line-height:1.5;color:#dbe3ec;} .ftx b{color:#fff;}
+  .comp{margin-top:14px;background:#FBF6E8;border:1px solid #ecdcae;border-radius:12px;padding:14px;}
+  .comp .ct{font-size:12px;font-weight:bold;letter-spacing:.5px;color:#9a7a16;margin-bottom:6px;}
+  .comp .cx{font-size:13.5px;line-height:1.55;color:#6d5713;} .comp .cx b{color:#7a5f10;}
+  .sun-note{margin:6px 20px 0;background:var(--mintsoft);border:1px solid #c9ebe0;border-radius:12px;padding:14px 16px;}
+  .sun-note .lbl{color:#1c7a63;font-size:12px;font-weight:bold;letter-spacing:1px;}
+  .sun-note .txt{color:#13564a;font-size:13.5px;line-height:1.55;margin-top:6px;} .sun-note .txt b{color:#0e463b;}
+  .foot{text-align:center;padding:20px 0 26px;color:#9aa6b2;font-size:11px;letter-spacing:2px;}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="topbar"></div>
+  <div class="hero">
+    <div class="badge"><div class="ring"></div><div class="leaf">🌿</div></div>
+    <div class="brand">LÍNEA YOUNG · AB COSMETIC</div>
+    <div class="title">Tu protocolo anti-acné</div>
+    <div class="subtitle">Rutinas completas que evolucionan contigo. Toca el caso que más se parezca al tuyo y sigue el protocolo paso a paso.</div>
+  </div>
+  <div class="ask">¿Cómo es tu acné ahora mismo?</div>
+  <div class="body">
+    <div class="legend">
+      <span><span class="legdot" style="background:#2FA98C;"></span>Base diaria (siempre)</span>
+      <span><span class="legdot" style="background:#C9A227;"></span>Tratamiento por fase</span>
+    </div>
+    <details class="prof" open>
+      <summary class="phead">
+        <div class="ic" style="background:#E8F4FF;">⚫</div>
+        <div class="ptit"><div class="big">Puntos negros, blancos y poros tapados</div><div class="small">Acné comedoniano · poca inflamación</div></div>
+        <span class="pm">+</span>
+      </summary>
+      <div class="pcont">
+        <div class="donde"><span class="dl">¿Dónde estás?</span> Tu piel acumula grasa y células dentro del poro, formando puntos negros y blancos, pero sin mucha inflamación. El objetivo es destapar el poro y mantenerlo limpio sin agredir la piel.</div>
+        <div class="rblock"><div class="rt">☀ Rutina de mañana</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b> — limpia el exceso de grasa.</div></div><div class="step"><div class="num">2</div><div class="stx"><b>Tónico</b> — destapa el poro por dentro.</div></div><div class="step"><div class="num">3</div><div class="stx"><b>Humectante ligero</b> — hidrata sin tapar el poro.</div></div><div class="step"><div class="num">4</div><div class="stx"><b>Protector Solar Sun (piel grasa)</b> — cierre obligatorio. Retoca cada 4 horas.</div></div></div>
+        <div class="rblock"><div class="rt">🌙 Rutina de noche</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b></div></div><div class="step"><div class="num">2</div><div class="stx"><b>Tónico</b></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Mascarilla opacificadora</b> — 2 noches/semana, en zonas de poros tapados. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">4</div><div class="stx"><b>Humectante ligero</b></div></div></div>
+        <div class="evol"><div class="et">📈 CÓMO EVOLUCIONA TU RUTINA</div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Si aparecen granitos inflamados:</b> suma el Suero Acné Activo y pasa al protocolo de brote inflamatorio.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Cuando el poro ya está limpio y estable:</b> retira la mascarilla entre semana e introduce el Retinoide de noche para afinar la textura a largo plazo.</div></div></div>
+        <div class="comp"><div class="ct">✦ COMPLEMENTO IDEAL</div><div class="cx"><b>Loción astringente</b> como apoyo en la zona T si notas exceso de grasa durante el día. Agítala y aplícala solo en las zonas brillantes.</div></div>
+      </div>
+    </details>
+    <details class="prof">
+      <summary class="phead">
+        <div class="ic" style="background:#FFEBEE;">🔴</div>
+        <div class="ptit"><div class="big">Granitos rojos e inflamados, barritos con pus</div><div class="small">Acné inflamatorio · pápulas y pústulas · fase de brote</div></div>
+        <span class="pm">+</span>
+      </summary>
+      <div class="pcont">
+        <div class="donde"><span class="dl">¿Dónde estás?</span> Estás en fase de brote activo: hay inflamación, rojez y granos con pus. Aquí el tratamiento es de ataque: calmar la inflamación, combatir la bacteria y secar los granos, sin dejar de hidratar y proteger.</div>
+        <div class="rblock"><div class="rt">☀ Rutina de mañana</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b> — limpia sin resecar.</div></div><div class="step"><div class="num">2</div><div class="stx"><b>Suero Acné Activo</b> — sobre las zonas con brote. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Humectante ligero</b> — mantiene la barrera sana.</div></div><div class="step"><div class="num">4</div><div class="stx"><b>Protector Solar Sun (piel grasa)</b> — cierre obligatorio. Retoca cada 4 horas.</div></div></div>
+        <div class="rblock"><div class="rt">🌙 Rutina de noche</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b></div></div><div class="step"><div class="num">2</div><div class="stx"><b>Suero Acné Activo</b> — sobre el brote. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Gel Antiacné Magistral</b> — solo sobre el grano, según indicación de tu especialista. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">4</div><div class="stx"><b>Mascarilla opacificadora</b> — punto sobre el grano que está por salir, toda la noche. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">5</div><div class="stx"><b>Humectante ligero</b> — calma y mejora la tolerancia.</div></div></div>
+        <div class="evol"><div class="et">📈 CÓMO EVOLUCIONA TU RUTINA</div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Mientras haya brotes activos:</b> mantén el Gel Magistral y el Suero Acné Activo. El magistral es de ataque: no es para uso permanente.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Cuando los brotes empiecen a ceder:</b> retira el Gel Magistral, cambia el Suero Acné Activo por el Suero anti acné y pasa al protocolo de mantenimiento.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Si te quedaron manchas:</b> trabájalas en paralelo con la Aclaradora Joven de noche.</div></div></div>
+        <div class="comp"><div class="ct">✦ COMPLEMENTO IDEAL</div><div class="cx"><b>Loción astringente</b> en la zona T si hay mucho brillo y grasa además del brote.</div></div>
+      </div>
+    </details>
+    <details class="prof">
+      <summary class="phead">
+        <div class="ic" style="background:#FFF7E0;">✨</div>
+        <div class="ptit"><div class="big">Piel muy grasa y brillosa todo el día</div><div class="small">Exceso de sebo · zona T brillante</div></div>
+        <span class="pm">+</span>
+      </summary>
+      <div class="pcont">
+        <div class="donde"><span class="dl">¿Dónde estás?</span> Tu piel produce grasa de más, con brillo y poros marcados sobre todo en frente, nariz y barbilla. El objetivo es regular el sebo y matificar sin resecar, porque la piel reseca produce aún más grasa.</div>
+        <div class="rblock"><div class="rt">☀ Rutina de mañana</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b> — controla la grasa desde el inicio.</div></div><div class="step"><div class="num">2</div><div class="stx"><b>Tónico</b> — afina el poro.</div></div><div class="step"><div class="num">3</div><div class="stx"><b>Suero anti acné</b> — regula la producción de grasa. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">4</div><div class="stx"><b>Protector Solar Sun (piel grasa)</b> — cierre obligatorio, acabado mate. Retoca cada 4 horas.</div></div></div>
+        <div class="rblock"><div class="rt">🌙 Rutina de noche</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b></div></div><div class="step"><div class="num">2</div><div class="stx"><b>Loción astringente</b> — local en la zona T más grasa. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Suero anti acné</b> <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">4</div><div class="stx"><b>Humectante ligero</b> — ligera, no te la saltes.</div></div></div>
+        <div class="evol"><div class="et">📈 CÓMO EVOLUCIONA TU RUTINA</div><div class="fase"><div class="fdot"></div><div class="ftx"><b>1–2 veces por semana:</b> aplica la Mascarilla opacificadora en toda la zona grasa para un control extra.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Si aparecen brotes inflamados:</b> suma el Suero Acné Activo y pasa al protocolo de brote.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Cuando la grasa esté equilibrada:</b> introduce el Retinoide de noche para refinar la piel.</div></div></div>
+        <div class="comp"><div class="ct">✦ COMPLEMENTO IDEAL</div><div class="cx"><b>Mascarilla opacificadora</b> es tu mejor aliada semanal para matificar y mantener el poro limpio.</div></div>
+      </div>
+    </details>
+    <details class="prof">
+      <summary class="phead">
+        <div class="ic" style="background:#F3ECE3;">🟤</div>
+        <div class="ptit"><div class="big">Manchas oscuras que dejó el acné</div><div class="small">Marcas post-acné · hiperpigmentación</div></div>
+        <span class="pm">+</span>
+      </summary>
+      <div class="pcont">
+        <div class="donde"><span class="dl">¿Dónde estás?</span> El acné ya cedió pero dejó manchas oscuras donde estuvieron los granos. Estas marcas se aclaran con constancia y, sobre todo, con protección solar diaria: sin ella, ningún aclarador funciona y las manchas se oscurecen.</div>
+        <div class="rblock"><div class="rt">☀ Rutina de mañana</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b></div></div><div class="step"><div class="num">2</div><div class="stx"><b>Humectante ligero</b></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Protector Solar Sun</b> — la regla de oro: sin él las manchas no se aclaran. Cierre obligatorio, retoca cada 4 horas.</div></div></div>
+        <div class="rblock"><div class="rt">🌙 Rutina de noche</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b></div></div><div class="step"><div class="num">2</div><div class="stx"><b>Aclaradora Joven</b> — sobre las manchas. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Humectante ligero</b></div></div></div>
+        <div class="evol"><div class="et">📈 CÓMO EVOLUCIONA TU RUTINA</div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Sé constante:</b> las manchas tardan varias semanas en desvanecer; no abandones.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Para retirar la Aclaradora:</b> hazlo de forma gradual: intercala un día sí y uno no con tu humectante, nunca de golpe.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Si aún tienes brotes ocasionales:</b> trátalos con el Suero Acné Activo en paralelo.</div></div></div>
+        <div class="comp"><div class="ct">✦ COMPLEMENTO IDEAL</div><div class="cx"><b>Suero Vitamina C (Complementos)</b> por la mañana antes del protector: aclara de día y potencia el efecto de la Aclaradora Joven.</div></div>
+      </div>
+    </details>
+    <details class="prof">
+      <summary class="phead">
+        <div class="ic" style="background:#E6F6EE;">🌿</div>
+        <div class="ptit"><div class="big">Ya controlé mis brotes, no quiero que vuelvan</div><div class="small">Mantenimiento · prevención de recaídas</div></div>
+        <span class="pm">+</span>
+      </summary>
+      <div class="pcont">
+        <div class="donde"><span class="dl">¿Dónde estás?</span> ¡Lo lograste! Tu piel está controlada y sin brotes activos. Ahora el objetivo es mantenerla así: prevenir recaídas, refinar la textura y desvanecer cualquier marca, sin los tratamientos de ataque que ya no necesitas.</div>
+        <div class="rblock"><div class="rt">☀ Rutina de mañana</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b></div></div><div class="step"><div class="num">2</div><div class="stx"><b>Suero anti acné</b> — mantiene la grasa a raya y previene brotes. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Humectante ligero</b></div></div><div class="step"><div class="num">4</div><div class="stx"><b>Protector Solar Sun (piel grasa)</b> — cierre obligatorio. Retoca cada 4 horas.</div></div></div>
+        <div class="rblock"><div class="rt">🌙 Rutina de noche</div><div class="step"><div class="num">1</div><div class="stx"><b>Espuma Limpiadora</b></div></div><div class="step"><div class="num">2</div><div class="stx"><b>Retinoide</b> — 2–3 noches/semana, sube según tolerancia. <span class="tg">tratamiento</span></div></div><div class="step"><div class="num">3</div><div class="stx"><b>Humectante ligero</b> — después del retinoide.</div></div></div>
+        <div class="evol"><div class="et">📈 CÓMO EVOLUCIONA TU RUTINA</div><div class="fase"><div class="fdot"></div><div class="ftx"><b>El retinoide es la estrella de esta fase:</b> mejora textura, desvanece marcas y evita recaídas. No lo combines la misma noche con ácidos o exfoliantes.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Empieza despacio:</b> 2 noches/semana e ir subiendo evita irritación. Si reseca, refuerza con humectante.</div></div><div class="fase"><div class="fdot"></div><div class="ftx"><b>Si vuelve un brote:</b> retoma puntualmente el Suero Acné Activo sobre la zona; no necesitas todo el protocolo de ataque.</div></div></div>
+        <div class="comp"><div class="ct">✦ COMPLEMENTO IDEAL</div><div class="cx"><b>Aclaradora Joven</b> de noche, alternando con el retinoide, si aún quedan marcas (nunca la misma noche que el retinoide).</div></div>
+      </div>
+    </details>
+
+    <div class="sun-note">
+      <div class="lbl">REGLA DE ORO ☀</div>
+      <div class="txt">En todos los protocolos, el <b>Protector Solar Sun para piel grasa</b> es el cierre obligatorio de la rutina de mañana, con retoque cada 4 horas. Junto con el <b>Humectante ligero</b>, nunca se quita: son la base que sostiene el tratamiento en cualquier fase. Y recuerda, los tratamientos nunca se retiran de golpe, siempre de forma gradual.</div>
+    </div>
+    <div class="foot">AB COSMETIC · abcosmeticsmx.com</div>
+  </div>
+</div>
+</body>
+</html>
